@@ -6,8 +6,6 @@
 A simplistic app that toggles between the question and answer with a single press (currently only goes one-way; future edits will ensure that you can go back and forth between the question and answer indefinitely).
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
-
 <img src="https://media.giphy.com/media/fYrEOdwE0vAt2GMGL8/giphy.gif" width=500><br>
 
 ## Required
