@@ -9,26 +9,26 @@
 
     <TextView
         android:id="@+id/q"
-        android:layout_width="384dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="47dp"
         android:background="@drawable/card_background"
         android:elevation="5dp"
         android:text="Who is the 44th President of the United States?"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="36sp"
+        android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Bill"
+        android:id="@+id/A2"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_alignParentTop="true"
@@ -40,7 +40,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/George"
+        android:id="@+id/A3"
         android:layout_width="411dp"
         android:layout_height="53dp"
         android:layout_alignParentStart="true"
@@ -57,7 +57,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/barack"
+        android:id="@+id/A1"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_alignParentStart="true"
@@ -86,5 +86,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="12dp"
         android:src="@drawable/ic_iconmonstr_eye_5" />
+
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_iconmonstr_plus_6" />
 
 </RelativeLayout>
