@@ -7,7 +7,7 @@ A functional flashcard app. Selecting the visibility icon reveals (and hides) th
 
 ### App Walk-though
 
-<img src="https://media.giphy.com/media/KZATa0iQxQMuC6bdmU/giphy.gif width=200><br>
+<img src="https://media.giphy.com/media/KZATa0iQxQMuC6bdmU/giphy.gif" width=200><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
