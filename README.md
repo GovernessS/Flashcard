@@ -3,10 +3,10 @@
 ## Lab 1
 
 ### App Description
-A simplistic app that toggles between the question and answer with a single press (currently only goes one-way; future edits will ensure that you can go back and forth between the question and answer indefinitely).
+A simplistic flashcard app. Currently, only one question is available as a proof-of-concept. Selecting the visibility icon reveals (and hides) the answer selection for the question presented. After selecting an answer, instant feedback is provided on whether the answer was correct. 
 
 ### App Walk-though
-<img src="https://media.giphy.com/media/fYrEOdwE0vAt2GMGL8/giphy.gif" width=500><br>
+<img src="https://media.giphy.com/media/UsMdBkedGruWYx0QgN/giphy.gif" width=500><br>
 
 ## Required
 - [X] Create New Project in Android Studio
@@ -15,8 +15,8 @@ A simplistic app that toggles between the question and answer with a single pres
 - [X] Build in logic to show the answer side when the card is tapped
 - [X] Push code to GitHub
 ## Optional
-- [ ] toggle the flashcard between the question side and the answer side
-- [ ] Style the question and answer side of the card to better distinguish between the two sides
-- [ ] Add selectable multiple choice answers beneath the card
-   - [ ] Change the background color of the multiple choice answers when clicked to indicate whether the question waanswered correctly
-- [ ] Further customize and style the card
+- [X] toggle the flashcard between the question side and the answer side
+- [X] Style the question and answer side of the card to better distinguish between the two sides
+- [X] Add selectable multiple choice answers beneath the card
+   - [X] Change the background color of the multiple choice answers when clicked to indicate whether the question was answered correctly
+- [X] Further customize and style the card
