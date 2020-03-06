@@ -3,11 +3,11 @@
 ## Lab 2
 
 ### App Description
-A functional flashcard app. Selecting the visibility icon reveals (and hides) the answer selection for the question presented. After selecting an answer, instant feedback is provided on whether the answer was correct. Selecting the "add" icon at the bottom allows users to enter a new question (and corresponding correct/incorrect answers). Currently, only one question can be shown at a time as a proof-of-concept.
+A functional flashcard app. Selecting the visibility icon reveals (and hides) the answer selection for the question presented. After selecting an answer, instant feedback is provided on whether the answer was correct. Selecting the "add" icon at the bottom allows users to enter a new question (and corresponding correct/incorrect answers). The question that is being displayed can be edited and revised, and constraints were integrated into the editing page so that each text field must be filled in prior to submitting a card. The user also received notifications if a field is not entered, as well as when a card has been successfully built. Currently, only one question can be shown at a time as a proof-of-concept.
 
 ### App Walk-though
 
-<img src="https://media.giphy.com/media/KZATa0iQxQMuC6bdmU/giphy.gif" width=200><br>
+<img src="https://media.giphy.com/media/Q9vfDEgtxBXeTvJy3T/giphy.gif" width=200><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
@@ -17,11 +17,13 @@ A functional flashcard app. Selecting the visibility icon reveals (and hides) th
 - [x] Push your progress to GitHub!
 
 ## Optional
-- [ ] User can edit a card
-- [ ] An error message is shown if the user doesn't enter both a Question and an Answer
-- [ ] A notification is shown if the card was created successfully
+- [x] User can edit a card
+- [x] An error message is shown if the user doesn't enter both a Question and an Answer
+- [x] A notification is shown if the card was created successfully
 - [x] User can also enter multiple choice answers when creating a card
-- [ ] App is further styled and customized!
+- [x] App is further styled and customized!
+
+
 
 
 #### Past Achievements
