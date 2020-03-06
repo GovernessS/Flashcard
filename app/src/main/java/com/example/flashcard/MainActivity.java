@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
     boolean isShowingIcon = true;
     @Override
@@ -71,6 +73,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+
+                MainActivity.this.startActivityForResult(intent, 100);
+            }
+        });
+
+        findViewById(R.id.editButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                intent.putExtra("stringKey1", ((TextView) findViewById(R.id.q)).getText().toString());
+                intent.putExtra("stringKey2", ((TextView) findViewById(R.id.A1)).getText().toString());
+                intent.putExtra("stringKey3", ((TextView) findViewById(R.id.A2)).getText().toString());
+                intent.putExtra("stringKey4", ((TextView) findViewById(R.id.A3)).getText().toString());
                 MainActivity.this.startActivityForResult(intent, 100);
             }
         });
@@ -95,6 +110,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView wrong2 = findViewById(R.id.A3);
             wrong2.setText(W2);
+
+            Snackbar.make(findViewById(R.id.q),
+                    "Card successfully created",
+                    Snackbar.LENGTH_SHORT)
+                    .show();
         }
     }
 }
