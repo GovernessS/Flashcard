@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 100) { // this 100 needs to match the 100 we used when we called startActivityForResult!
+        if ((requestCode == 100) && (resultCode == RESULT_OK)) { // this 100 needs to match the 100 we used when we called startActivityForResult!
             String mainQ = data.getExtras().getString("string1"); // 'string1' needs to match the key we used when we put the string in the Intent
             String correct = data.getExtras().getString("string2");
             String W1 = data.getExtras().getString("string3"); // 'string1' needs to match the key we used when we put the string in the Intent
