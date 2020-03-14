@@ -107,4 +107,14 @@
         android:layout_marginBottom="10dp"
         android:src="@drawable/ic_iconmonstr_edit_11" />
 
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="61dp"
+        android:src="@drawable/ic_iconmonstr_arrow_28" />
+
 </RelativeLayout>
