@@ -2,15 +2,18 @@ package com.example.flashcard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     boolean isShowingIcon = true;
@@ -110,12 +113,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // advance our pointer index so we can show the next card
-                currentCardDisplayedIndex++;
+                //currentCardDisplayedIndex++;
+
+                currentCardDisplayedIndex = getRandomNumber(0, allFlashcards.size()-1);
+
 
                 // make sure we don't get an IndexOutOfBoundsError if we are viewing the last indexed card in our list
-                if (currentCardDisplayedIndex > allFlashcards.size() - 1) {
-                    currentCardDisplayedIndex = 0;
-                }
+                //if (currentCardDisplayedIndex > allFlashcards.size() - 1) {
+                    //currentCardDisplayedIndex = 0;
+                //}
 
                 // set the question and answer TextViews with data from the database
                 ((TextView) findViewById(R.id.q)).setText(allFlashcards.get(currentCardDisplayedIndex).getQuestion());
@@ -124,6 +130,41 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView) findViewById(R.id.A3)).setText(allFlashcards.get(currentCardDisplayedIndex).getWrongAnswer2());
             }
         });
+
+
+        findViewById(R.id.trash).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int numTotalCards = allFlashcards.size();
+                System.out.println(allFlashcards.size());
+                System.out.println(currentCardDisplayedIndex);
+                if (numTotalCards == 1) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Need at least one card", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER_VERTICAL, 0, -150);
+                    toast.show();
+                } else {
+                    flashcardDatabase.deleteCard(((TextView) findViewById(R.id.q)).getText().toString());
+                    allFlashcards.remove(currentCardDisplayedIndex);
+                    numTotalCards--;
+                    if (currentCardDisplayedIndex >= 0 && currentCardDisplayedIndex < allFlashcards.size()) {
+                        currentCardDisplayedIndex--;
+                    } else {
+                        currentCardDisplayedIndex++;
+                    }
+                    ((TextView) findViewById(R.id.q)).setText(allFlashcards.get(currentCardDisplayedIndex).getQuestion());
+                    ((TextView) findViewById(R.id.A1)).setText(allFlashcards.get(currentCardDisplayedIndex).getAnswer());
+                    ((TextView) findViewById(R.id.A2)).setText(allFlashcards.get(currentCardDisplayedIndex).getWrongAnswer1());
+                    ((TextView) findViewById(R.id.A3)).setText(allFlashcards.get(currentCardDisplayedIndex).getWrongAnswer2());
+                }
+            }
+        });
+    }
+
+    // returns a random number between minNumber and maxNumber, inclusive.
+// for example, if i called getRandomNumber(1, 3), there's an equal chance of it returning either 1, 2, or 3.
+    public int getRandomNumber(int minNumber, int maxNumber) {
+        Random rand = new Random();
+        return rand.nextInt((maxNumber - minNumber) + 1) + minNumber;
     }
 
     @Override
