@@ -5,7 +5,19 @@
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#a4d0a9"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/q"
@@ -33,10 +45,10 @@
         android:layout_height="53dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="249dp"
-        android:background="#d2b48c"
+        android:background="#f2b3bd"
         android:text="Bill Clinton"
         android:textAlignment="center"
-        android:textColor="#187bcd"
+        android:textColor="#ffffff"
         android:textSize="30sp" />
 
     <TextView
@@ -50,10 +62,10 @@
         android:layout_marginStart="-2dp"
         android:layout_marginTop="329dp"
         android:layout_marginEnd="2dp"
-        android:background="#d2b48c"
+        android:background="#f2b3bd"
         android:text="George H.W. Bush"
         android:textAlignment="center"
-        android:textColor="#187bcd"
+        android:textColor="#ffffff"
         android:textSize="30sp" />
 
     <TextView
@@ -63,10 +75,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="409dp"
-        android:background="#d2b48c"
+        android:background="#f2b3bd"
         android:text="Barack Obama"
         android:textAlignment="center"
-        android:textColor="#187bcd"
+        android:textColor="#ffffff"
         android:textSize="30sp" />
 
     <ImageView

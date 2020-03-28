@@ -5,5 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="correctAnswer">#08f26e</color>
     <color name="incorrectAns">#ee0000</color>
-    <color name="normal">#d2b48c</color>
+    <color name="normal">#f2b3bd</color>
 </resources>
