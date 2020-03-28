@@ -5,19 +5,20 @@
 ### App Description
 A functional flashcard app. Selecting the visibility icon reveals (and hides) the answer selection for the question presented. After selecting an answer, instant feedback is provided on whether the answer was correct. Selecting the "add" icon at the bottom allows users to enter a new question (and corresponding correct/incorrect answers). The question that is being displayed can be edited and revised, and constraints were integrated into the editing page so that each text field must be filled in prior to submitting a card. The user also received notifications if a field is not entered, as well as when a card has been successfully built. 
 
-Now, the app can store several pre-made questions within a database, which can be navigated through using the right arrow. Currently, the questions only go in a specific order (not randomized) and the UX for each question has not been optimized (same setup for each Q/A regardless of the length/size of the pair). Will be fixed in future updates!
+Now, the app can store several pre-made questions within a database, which can be navigated through using the right arrow. It will cycle through the cards randomly, and cards can be deleted from the stack. Features such as editing the current card in the list, as well as the UX for each question has not been optimized (same setup for each Q/A regardless of the length/size of the pair), will be added in future updates!
 
 ### App Walk-though
 
-<img src="https://media.giphy.com/media/Q9ufFXYG24kspVD0Zy/giphy.gif" width=200><br>
+<img src="https://media.giphy.com/media/Q9ufFXYG24kspVD0Zy/giphy.gif" width=200><br> (Required Features)
+<img src="https://media.giphy.com/media/QvYfRJgSOIeSXF2nSN/giphy.gif" width=200><br> (Optional Features)
 
 ## Required
 - [X] User can create a card and still see their created card when the app is relaunched.
 - [X] User can create muliple cards and browse through all created cards
 
 ## Optional
-- [ ] User can delete a card and no longer see it in their deck anymore
-- [ ] Flashcards are shown in random order instead of the order they were created in
+- [X] User can delete a card and no longer see it in their deck anymore
+- [X] Flashcards are shown in random order instead of the order they were created in
 - [ ] User can edit a card and see the edit saved when they browse through their deck of cards
 - [X] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
 
